@@ -101,7 +101,6 @@ public class Main {
     public static void AddingGoodsToTheWarehouse(ArrayList<Stock> stocks, ArrayList<Product> products) {
         while (true) {
             int mainMenuItem;
-            int mainMenuStock;
             System.out.println("    1) Добавление шампуня на склад");
             System.out.println("    2) Добавление мыло на склад");
             System.out.println("    3) Добавление напитка на склад");
@@ -109,6 +108,7 @@ public class Main {
             System.out.print("Ввод:");
             mainMenuItem = scanner.nextInt();
             if (mainMenuItem == 1) {
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Информация о товаре:");
                 System.out.println("    1) Введите название Шампуня");
                 System.out.print("Ввод:");
@@ -120,6 +120,7 @@ public class Main {
                 System.out.println(products.get(0).toString());
                 break;
             } else if (mainMenuItem == 2) {
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Информация о товаре:");
                 System.out.println("    1) Введите название Мыла");
                 System.out.print("Ввод:");
@@ -131,6 +132,7 @@ public class Main {
                 System.out.println(products.get(0).toString());
                 break;
             } else if (mainMenuItem == 3) {
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Информация о товаре:");
                 System.out.println("    1) Введите название Напитка");
                 System.out.print("Ввод:");
@@ -156,9 +158,11 @@ public class Main {
     public static void AddingManyGoodsToTheWarehouse(ArrayList<Stock> stocks, ArrayList<Product> products) {
         while (true) {
             int mainMenuItem;
+            System.out.println("-------------------------------------------------------------");
             System.out.println("Введите количество коробок для добавления на склад");
             System.out.print("Ввод:");
             int howManyBox = scanner.nextInt();
+            System.out.println("-------------------------------------------------------------");
             System.out.println("    1) Добавление шампуня на склад");
             System.out.println("    2) Добавление мыло на склад");
             System.out.println("    3) Добавление напитка на склад");
@@ -166,6 +170,7 @@ public class Main {
             System.out.print("Ввод:");
             mainMenuItem = scanner.nextInt();
             if (mainMenuItem == 1) {
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Информация о товаре:");
                 System.out.println("    1) Введите название Шампуня");
                 System.out.print("Ввод:");
@@ -179,6 +184,7 @@ public class Main {
                 }
                 break;
             } else if (mainMenuItem == 2) {
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Информация о товаре:");
                 System.out.println("    1) Введите название Мыла");
                 System.out.print("Ввод:");
@@ -192,6 +198,7 @@ public class Main {
                 }
                 break;
             } else if (mainMenuItem == 3) {
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Информация о товаре:");
                 System.out.println("    1) Введите название Напитка");
                 System.out.print("Ввод:");
@@ -273,9 +280,9 @@ public class Main {
         }
         System.out.println("----------------------------------------------------------");
         System.out.println("Все товары со всех складов");
-        System.out.println("коробки с шампунем " + counterShampoo + " товара(ов)");
-        System.out.println("коробки с мылом " + counterSoap + " товара(ов)");
-        System.out.println("блок c напитком " + counterdrink + " товара(ов);");
+        System.out.println("Коробки с шампунем " + counterShampoo + " товара(ов)");
+        System.out.println("Коробки с мылом " + counterSoap + " товара(ов)");
+        System.out.println("Блок c напитком " + counterdrink + " товара(ов)");
     }
 }
 
