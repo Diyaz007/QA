@@ -20,10 +20,10 @@ public class Stock {
         this.products = products;
     }
 
-    @Override
     public String toString() {
-        return "Склад" +
-                " \nМесто  = " + getVolume() +
-                " \nПродукт = " + getProducts()+"\n";
+            String massege = "Склад " +
+                    " \nМесто на складе = " + getVolume() +
+                    "\n"+ getProducts() + "\n";
+        return massege;
     }
 }
