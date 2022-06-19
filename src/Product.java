@@ -5,7 +5,7 @@ public class Product {
     private int volumeProduct;
 
     public Product(String type, String name, int volumeBox, int volumeProduct) {
-        this.type = type;
+         this.type = type;
         this.name = name;
         this.volumeBox = volumeBox;
         this.volumeProduct = volumeProduct;
