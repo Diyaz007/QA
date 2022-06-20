@@ -108,7 +108,7 @@ public class Start {
 
     private static void DeletingManyProduct(ArrayList<Stock> stocks, ArrayList<Product> products, ArrayList<Product> productsInUse) {
         int howManyProductForDelite;
-        System.out.println("Введите количество продуктов для удоления");
+        System.out.println("Введите количество продуктов для удаления");
         System.out.print("Ввод: ");
         howManyProductForDelite = scanner.nextInt();
         while (true) {
